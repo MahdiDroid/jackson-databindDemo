@@ -11,7 +11,7 @@ public class mainDriver {
             ObjectMapper mapper = new ObjectMapper();
 
             Student thestudent =
-                    mapper.readValue(new File("data/sample-lite.json"),Student.class);
+                    mapper.readValue(new File("data/sample-full.json"),Student.class);
             System.out.println("fistName : " + thestudent.getFirstName() +
                                 "\nlastName : " + thestudent.getLastName());
 
