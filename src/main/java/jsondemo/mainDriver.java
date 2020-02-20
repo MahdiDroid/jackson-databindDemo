@@ -13,7 +13,8 @@ public class mainDriver {
             Student thestudent =
                     mapper.readValue(new File("data/sample-full.json"),Student.class);
             System.out.println("fistName : " + thestudent.getFirstName() +
-                                "\nlastName : " + thestudent.getLastName());
+                                "\nlastName : " + thestudent.getLastName() +
+                                "address" + thestudent.getAddress());
 
         }catch (Exception e){
             e.printStackTrace();
